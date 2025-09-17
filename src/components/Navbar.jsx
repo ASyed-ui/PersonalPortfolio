@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export const Navbar = (menuOpen, setMenuOpen) => {
+export const Navbar = ({menuOpen, setMenuOpen}) => {
 
     useEffect(() => {
         document.body.style.overflow = menuOpen ? "hidden" : "";
@@ -25,36 +25,31 @@ export const Navbar = (menuOpen, setMenuOpen) => {
                             href="#home"
                             className="text-gray-300 hove:text-white transition-colors"
                             >
-                            {" "}
                             Home
                         </a>
                         <a
                             href="#about"
                             className="text-gray-300 hove:text-white transition-colors"
                         >
-                            {" "}
-                            About{" "}
+                            About
                         </a>
                         <a
                             href="#projects"
                             className="text-gray-300 hove:text-white transition-colors"
                         >
-                            {" "}
-                            Projects{" "}
+                            Projects
                         </a>
                         <a
                             href="#services"
                             className="text-gray-300 hove:text-white transition-colors"
                         >
-                            {" "}
                             Services
                         </a>
                         <a
                             href="#contact"
                             className="text-gray-300 hove:text-white transition-colors"
                         >
-                            {" "}
-                            Contact{" "}
+                            Contact
                         </a>
 
                     </div>
