@@ -53,14 +53,14 @@ export const About = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                     <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
                         <h3 className="text-xl font-bold mb-4 text-center"> 🏫 Education </h3>
-                        <ul className="list-disc list-inside text-gray-300 space-y-2">
+                        <ul className="list-disc list-inside text-gray-300 space-y-4">
                             <li>
-                                <strong> Advanced Diploma in Software Engineering Technology </strong> - Centennial College
+                                <strong> Advanced Diploma in Software Engineering</strong> - Centennial College
                                 (2024-2027)
                             </li>
                             <li>
                                 Relevant Coursework: Data Structures, Web Development, Cloud
-                                Computing...
+                                Computing
                             </li>
                         </ul>
                     </div>
