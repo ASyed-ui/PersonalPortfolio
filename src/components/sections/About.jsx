@@ -6,17 +6,26 @@ export const About = () => {
     const backendSkills = ["Java", "C#", "Python", "Node.js", "GraphQL", "AWS"]
 
     return (
-        <section
+        <section        
             id="about"
             className="min-h-screen flex items-center justify-center py-20"
         >
             <RevealOnScroll>
             <div className="max-w-5xl mx-auto px-4">
-                <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+                <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center flex items-center justify-center gap-4">
                     About Me
+
+                    <a  
+                        href="/aadil_resume.pdf" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="border border-blue-500/50 text-blue-500 py-2 px-2 text-2xl rounded font-normal transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-blue-500/10"
+                    >
+                        View CV
+                    </a>
                 </h2>
 
-                <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+                <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
                     <p className="text-gray-300 mb-6 text-center">
                         Passionate developer with expertise in building scalable web
                         applications and creating innovative solutions.
@@ -53,7 +62,7 @@ export const About = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                    <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+                    <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
                         <h3 className="text-xl font-bold mb-4 text-center"> 🏫 Education </h3>
                         <ul className="list-disc list-inside text-gray-300 space-y-4">
                             <li>
@@ -66,7 +75,7 @@ export const About = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+                    <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
                         <h3 className="text-xl font-bold mb-4 text-center"> 💼 Work Experience </h3>
                         <div className="space-y-4 text-gray-300">
                             <div>
