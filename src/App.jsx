@@ -31,7 +31,6 @@ function App() {
         <Projects />
         <Services />
         <Contact />
-
       </div>
     </>
   );
@@ -39,3 +38,5 @@ function App() {
 }
 
 export default App
+
+

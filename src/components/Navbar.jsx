@@ -12,7 +12,6 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
                 <div className="flex justify-between items-center h-16">
 
                     <a href="#home" className="font-mono text-xl font-bold text-white"> 
-                        {""}
                         aadil<span className="text-blue-500">codes</span>{" "}
                     </a> 
 
@@ -51,13 +50,11 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
                         >
                             Contact
                         </a>
-
                     </div>
-
                 </div>
-
             </div>
         </nav>
-
     );
 } 
+
+
