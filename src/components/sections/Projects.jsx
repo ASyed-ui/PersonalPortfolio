@@ -1,6 +1,7 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Projects = () => {
+    // Array of featured projects with details
     const projects = [
         {
             title: "Cloud Platform",
@@ -27,27 +28,39 @@ export const Projects = () => {
 
     return (
         <section 
-            id="projects"
+            id="projects" // anchor id for navigation
             className="min-h-screen flex items-center justify-center py-20"
         >
+            {/* Animate section when scrolled into view */}
             <RevealOnScroll>
                 <div className="max-w-[85rem] mx-auto px-4">
+                    
+                    {/* Section heading */}
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
                         Featured Projects
                     </h2>
+
+                    {/* Grid layout for projects */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {projects.map((project, index) => (
                             <div
                                 key={index}
                                 className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
                             >
+                                {/* Project image */}
                                 <img 
                                     src={project.image} 
                                     alt={project.title} 
                                     className="w-full h-55 object-cover rounded-lg mb-4"
                                 />
+
+                                {/* Project title */}
                                 <h3 className="text-xl font-bold mb-2 text-center">{project.title}</h3>
+
+                                {/* Project description */}
                                 <p className="text-gray-400 mb-4">{project.description}</p>
+
+                                {/* List of technologies used */}
                                 <div className="flex flex-wrap gap-2 mb-4 justify-center">
                                     {project.tech.map((tech, key) => (
                                         <span
@@ -58,8 +71,12 @@ export const Projects = () => {
                                         </span>
                                     ))}
                                 </div>
+
+                                {/* Link to view project */}
                                 <div className="flex justify-center">
-                                    <a href="#" className="text-blue-400 hover:text-blue-300 transition-colors my-4">View Project →</a>
+                                    <a href="#" className="text-blue-400 hover:text-blue-300 transition-colors my-4">
+                                        View Project →
+                                    </a>
                                 </div>
                             </div>
                         ))}
