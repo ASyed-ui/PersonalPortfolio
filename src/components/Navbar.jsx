@@ -16,7 +16,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
                     {/* Logo / Brand name */}
                     <Link to="/" className="font-mono text-xl font-bold text-white"> 
-                        aadil<span className="text-blue-500">codes</span>{" "}
+                        aadil<span className="text-blue-500">Tech</span>{" "}
                     </Link> 
 
                     {/* Hamburger menu icon for mobile */}
