@@ -6,5 +6,5 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   // Comment this out to run on localhost:
-  // base: "/aadil_portfolio/", 
+  base:  process.env.VITE_BASE_PATH || "/aadil_portfolio", 
 })
